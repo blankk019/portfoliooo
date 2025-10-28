@@ -79,7 +79,14 @@
 <!-- Projects Section -->
 <section class="projects-section py-5">
   <div class="container">
-    <h2 class="text-center mb-5">My Projects</h2>
+    <h2
+      class="text-center mb-5"
+      [style.background-color]="'#e9ecef'"
+      [style.padding.px]="20"
+      [style.border-radius.px]="15"
+    >
+      My Projects
+    </h2>
     <div class="row g-4">
       @for (project of projects; track $index) {
       <div class="col-md-6 col-lg-3">
