@@ -1,0 +1,108 @@
+<!-- Technologies Carousel -->
+<section class="tech-carousel py-4">
+  <div class="container">
+    <div
+      id="techCarousel"
+      class="carousel slide"
+      data-bs-ride="carousel"
+      data-bs-interval="2000"
+    >
+      <div class="carousel-inner text-center">
+        <div class="carousel-item active">
+          <img
+            src="/favicon.ico"
+            class="d-inline-block mx-3 tech-icon"
+            alt="Angular"
+          />
+          <img
+            src="/noBackground/bs.png"
+            class="d-inline-block mx-3 tech-icon"
+            alt="Bootstrap"
+          />
+          <img
+            src="/noBackground/py.png"
+            class="d-inline-block mx-3 tech-icon"
+            alt="Python"
+          />
+          <img
+            src="/noBackground/html.png"
+            class="d-inline-block mx-3 tech-icon"
+            alt="HTML"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="/noBackground/js.png"
+            class="d-inline-block mx-3 tech-icon"
+            alt="JavaScript"
+          />
+          <img
+            src="/gitt.png"
+            class="d-inline-block mx-3 tech-icon"
+            alt="Git"
+          />
+          <img
+            src="/noBackground/py.png"
+            class="d-inline-block mx-3 tech-icon"
+            alt="Python"
+          />
+          <img
+            src="/noBackground/njs.png"
+            class="d-inline-block mx-3 tech-icon"
+            alt="NodeJS"
+          />
+        </div>
+        <!-- Add more carousel-item divs as needed -->
+      </div>
+
+      <!-- Optional controls -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#techCarousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#techCarousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section class="projects-section py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">My Projects</h2>
+    <div class="row g-4">
+      @for (project of projects; track $index) {
+      <div class="col-md-6 col-lg-3">
+        <a
+          href="{{ project.githubLink }}"
+          target="_blank"
+          class="text-decoration-none"
+        >
+          <div class="card project-card h-100">
+            <img
+              src="{{ project.image }}"
+              class="card-img-top"
+              alt="{{ project.name }}"
+            />
+            <div class="card-body">
+              <h5 class="card-title">{{ project.name }}</h5>
+              <p class="card-text">{{ project.description }}</p>
+              <small class="text-muted">{{ project.technologies }}</small>
+            </div>
+          </div>
+        </a>
+      </div>
+      }
+    </div>
+  </div>
+</section>

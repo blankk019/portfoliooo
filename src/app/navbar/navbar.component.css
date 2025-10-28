@@ -1,0 +1,43 @@
+.custom-navbar {
+  background-color: #121212 !important; /* Dark background */
+  padding: 1rem 2rem;
+}
+
+.navbar-brand {
+  color: #ffd700 !important; /* Golden yellow */
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #ffeb7f !important;
+}
+
+.nav-link {
+  color: #ffd700 !important;
+  font-weight: 500;
+  margin-left: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #fffacd !important; /* Lighter gold */
+}
+
+/* Divider for mobile menu */
+.menu-divider {
+  border: 0;
+  border-top: 1px solid rgba(255, 215, 0, 0.3);
+  margin: 0.5rem 0;
+}
+
+/* Make sure the burger button aligns right on mobile */
+.navbar-toggler {
+  border-color: rgba(255, 215, 0, 0.4);
+}
+
+.navbar-toggler-icon {
+  filter: brightness(0) invert(1);
+}

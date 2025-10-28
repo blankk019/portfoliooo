@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  background: linear-gradient(
+    to bottom,
+    #1a1a1a,
+    #444421
+  ); /* black to muted gold */
+  background-attachment: fixed;
+  color: #fff; /* default text color */
+  min-height: 100%; /* ensures it fills content height */
+}
+.projects-section,
+.tech-carousel,
+.about-section {
+  /* any other sections */
+  background-color: transparent; /* allow the gradient to show through */
+}
